@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leer Usuarios</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>All Users</h1>
+        <a id="add-user" href="./Html/crearUsuario.html" class="add-user" >Add New User</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Profile Picture</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="usuarios-tbody">
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>Supervisor</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Profile Picture"></td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <!-- Más filas de usuarios aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./scripts/eliminarUsuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Usuario</title>
+    <link rel="stylesheet" href="../css/editarUsuario.css">
+    <script src="../scripts/editarUsuario.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit User</h1>
+        <form id="form-edit-user" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password">
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="supervisor" selected>Supervisor</option>
+                <option value="controller">Controller</option>
+                <option value="maestro">Maestro</option>
+            </select>
+
+            <label for="profile-picture">New Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture">
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
